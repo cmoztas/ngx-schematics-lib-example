@@ -1,9 +1,9 @@
 {
   "name": "super-ui-lib",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
-    "postbuild": "copyfiles schematics/collection.json ../../dist/super-ui-lib/"
+    "postbuild": "copyfiles schematics/collection.json schematics/*/schema.json schematics/*/files/** ../../dist/super-ui-lib/"
   },
   "publishConfig": {
     "registry": "http://localhost:4873"
